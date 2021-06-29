@@ -10,7 +10,7 @@ const forecast=(x,y,callback)=>{
             callback('Unable to find location',undefined)
         } else {
             
-            callback(undefined,body.current.weather_descriptions[0] + ". It is currently " + body.current.temperature + " degress out.")  
+            callback(undefined,body.current.weather_descriptions[0] + ". It is currently " + body.current.temperature + " degress out and uv index is "+body.current.uv_index)  
         }
     })
 }
